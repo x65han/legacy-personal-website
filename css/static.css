@@ -1,0 +1,124 @@
+/*.border{border:0.1px solid red;}*/
+.white{background-color:white !important;}
+.division{height:2px;margin: 5% auto 5% auto;width:60%;background-color:grey;}
+.UDAC{color:red;display:inline-block;font-size:24px;}
+.logo{height:100px;width:100px;}
+.work-experience-job-title,.education-title{margin-bottom: -10px;}
+.work-experience-description,.education-description{line-height: 25px;font-weight:bold;color:#333;}
+.rotate{animation:rotating 100s infinite linear;}
+.blink{animation:blinking 2s infinite;}
+.credit-section{color:green;text-align:center;}
+.home-title{transform:scale(0.1,0.1);}
+.credit-section i{font-size:;color:orangered;}
+.credit-section-credit{color:#111;}
+.apple-container{overflow:auto;width:100%;height:auto;}
+.section-subtitle{color:green;margin-bottom:3%;}
+.section-title{border-bottom:2px solid orangered;display:table;margin-bottom:5%;}
+.grey{background-color:lightgrey !important;}
+.soft-skills-text{transform:scaleX(0);}
+.soft-skills-one, .soft-skills-two, .soft-skills-three, .soft-skills-four{padding-bottom:20px;border-radius:20px;transition:all .6s linear;}
+.daydayup{font-size:3em;position:fixed;color:green;right:3%;opacity:0;cursor:pointer;top:85vh;transition:all .1s;z-index:999;}
+.daydayup:hover{animation-delay: -2s !important;}
+.printable{
+  transition:all 0s linear !important;
+  border-right:2px solid lightgrey;
+  margin-left:auto;margin-right:auto;
+  display:table;
+}
+.fast-cursor{
+  -webkit-animation:cursor 300ms infinite linear;
+  -moz-animation:cursor 300ms infinite linear;
+  animation:cursor 300ms infinite linear;
+}
+.slow-cursor{
+  -webkit-animation:cursor 1000ms 16 linear;
+  -moz-animation:cursor 1000ms 16 linear;
+  animation:cursor 1000ms 16 linear;
+}
+.preview-trigger{
+  font-size:13px !important;padding:-5px !important;cursor:pointer;
+  border-color:#0077B5 !important;color:#0077B5 !important;
+}
+.preview{
+  transition:all 0.1s linear;
+  background-color:transparent !important;width:60vw;height:60vw;
+  padding-top:150px;cursor:pointer;max-width: 70vw;max-height:700vh;overflow-x: hidden;overflow-y: scroll;position:fixed;
+  z-index:999; border: 15px solid transparent;box-shadow: 0 0 0 5px orangered;border-radius: 50%;background-size:100% 100%;
+  left : calc((100vw - 400px) / 2);top:   calc((100vh - 400px) / 2 - 70px);
+}
+.preview-background{
+  transform:scale(1.43,2);width:100%;height:100%;
+  background:url("../img/recommendation.jpg") no-repeat 50%/70% rgba(0,0,0,0.1);
+}
+.pulseIcon{
+  z-index:999;
+  text-align: center;
+  color:orangered;
+  height:80px;
+  cursor:pointer;
+  width: 80px;
+  font-size:80px !important;
+}
+.pulse{
+  transition:none !important;
+  width: 5px;
+  height:5px;
+  cursor:pointer;
+  z-index:998;
+  border:2px solid #66cc33;
+  border-radius: 50%;
+  background:radial-gradient(transparent 25%, #66cc33);
+}
+.dead-center{
+  position: fixed;
+  top: 45vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*custom made keyframes*/
+@-webkit-keyframes rotating{from{transform: rotate(0deg);}to{transform:rotate(9999deg);}}
+@-moz-keyframes rotating{from{transform: rotate(0deg);}to{transform:rotate(9999deg);}}
+@keyframes rotating{from{transform: rotate(0deg);}to{transform:rotate(9999deg);}}
+
+@-webkit-keyframes blinking{from{color:green;}to{color:orangered;}}
+@-moz-keyframes blinking{from{color:green;}to{color:orangered;}}
+@keyframes blinking{from{color:green;}to{color:orangered;}}
+
+@-webkit-keyframes cursor{0%{border-right:2px solid red;}50%{border-right:2px solid lightgrey;}}
+@-moz-keyframes cursor{0%{border-right:2px solid red;}50%{border-right:2px solid lightgrey;}}
+@keyframes cursor{0%{border-right:2px solid red;}50%{border-right:2px solid lightgrey;}}
+ 
+.SemiahmooCaption,.WaterlooCaption,.BlackBerryCaption,.EricssonCaption{
+  display:table;margin-top:5%;border-radius:24px; margin-left:auto;cursor:pointer;
+  padding-left:5px;font-size:16px;font-weight:bold;padding-right:5px;
+  margin-right:auto;border:2px solid orangered;color:orangered;transform:scaleX(0.001);
+}
+.PreviewCaption{
+  display:table;border-radius:24px;position:fixed;z-index:500;
+  padding:5px 20px 5px 20px;font-size:1px;font-weight:bold;
+  color:white !important;background-color:#0077b5;cursor:pointer;
+  left:calc((100vw - 200px)/2);top:calc(100vh - 150px);
+  -webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;
+}
+.preview-dismiss{
+  color:orangered;font-size:40px;position:fixed;cursor:pointer;
+  left:calc((100vw - 40px)/2);top:calc(100vh - 100px); z-index:501;
+}
+.WaterlooIcon{background:   url("../img/waterloo.jpg")   no-repeat 50%/70% rgba(0,0,0,0.1);margin-top:30px !important;background-size:70% 80% !important}
+.EricssonIcon{background:   url("../img/ericsson.jpg")   no-repeat 50%/70% rgba(0,0,0,0.1);margin-top:30px !important;}
+.SemiahmooIcon{background:  url("../img/semiahmoo.jpg")  no-repeat 50%/70% rgba(0,0,0,0.1);margin-top:30px !important;}
+.BlackBerryIcon{background: url("../img/blackberry.jpg") no-repeat 50%/70% rgba(0,0,0,0.1);margin-top:30px !important;background-size:80% 110% !important;}
+
+/*Image Clip Rectangle animation*/
+.bb, .bb::before, .bb::after {position: absolute;top: 0;bottom: 0;left: 0;right: 0;}
+.bb {pointer-events: none;width:150px;height:150px;position:relative;margin: auto;color: #69ca62;background-size:100% 100%;box-shadow: inset 0 0 0 1px rgba(105, 202, 98, 0.5);}
+.bb::before, .bb::after {content: '';z-index: -1;margin: -5%;box-shadow: inset 0 0 0 2px;animation: clipMe 8s linear infinite;}
+.bb::before {animation-delay: -4s;}
+.bb:hover::after, .bb:hover::before {background-color: rgba(255, 0, 0, 0.3);}
+
+@keyframes clipMe {
+  0%, 100% {clip: rect(0px, 165px, 2px, 0px);}
+  25% {clip: rect(0px, 2px, 165px, 0px);}
+  50% {clip: rect(158px, 165px, 165px, 0px);}
+  75% {clip: rect(0px, 165px, 165px, 158px);}
+}
